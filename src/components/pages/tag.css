@@ -1,0 +1,165 @@
+/*.tag{background-color: #fffba0;}*/
+
+.logo{margin-left: 22rem;
+    width: max-content;
+}
+
+
+.logotwo
+    {
+         margin-left: 20rem;
+        }
+
+/*Update the cardContentStyle to use flexbox and wrap if needed*/
+.cardContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    width: 100%;
+}
+
+
+/*Update titleStyle for the card title */
+.title{
+    font-size: 24px; /*Adjust font size as needed*/
+    font-weight: bold; /*Optional: if you want the title to be bold */
+    margin: 20px 0 10px 0; /*Adjust margin as needed */
+    flex-basis: 100%; /*Ensures the title takes full width of the container*/
+    text-align: left;/*Aligns text to the left */
+    color: #000; /*Text color*/
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: -10rem;  Decrease the negative margin to move the card down slightly*/
+    width: 100%; /* Ensure the card container is full width*/
+    max-width: 800px; /*Match the card width */
+    z-index: 10; /*Above the extended background */
+}
+
+.card{
+   
+    margin-left: 32rem;
+    background-color : #5aff00;
+    border-radius: 8px;
+    padding: 2px;
+    position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 75%;
+}
+
+
+
+.contentContainer{
+    width: 100%; /* Take the full width to align with the header and footer*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Grow to take available space, pushing the footer down*/
+    justify-content: space-between;
+}
+
+
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*Aligns text to the left*/
+    width: calc(100% - 250px);/*Takes full width minus image and margin*/
+    padding-right: 7px; /*Adds some padding between text and image */
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    background-color: #cccccc;/*Placeholder color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.textStyle{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px; /*Adjust the font size as needed */
+}
+
+.textarea{
+    margin-top: 10px;
+    width: 100%; /*Makes the textarea full width of its parent */
+    height: 100px; /*Adjust height as needed */
+}
+
+
+/*Add a style for the GPS button*/
+.gpsButton{
+    background-color: #a500ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center; /* Center button horizontally*/
+    width: 100%; /*Take up full container width */
+    margin: 1rem 0;/* Add some vertical space*/
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .card {
+        
+    margin-left: 10rem;
+    width: 95%;  
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .textContainer {
+        padding-right: 0.1rem;
+        width:calc(100% - 2rem);
+    }
+        .image {
+            width: 15rem;
+            height: 15rem;
+            margin-left:5rem;
+        }
+}
+@media screen and (max-width: 780px) {
+    .card {
+
+        margin-left: 1rem;
+        width:90%
+    }
+}
+@media screen and (max-width: 420px) 
+{  
+    .image {
+            width: 12rem;
+            height: 12rem;
+            margin-left: 3rem;
+        }
+    
+
+        .card {
+            width:90%;
+        }
+
+
+    }       
