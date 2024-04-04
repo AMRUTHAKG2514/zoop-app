@@ -1,17 +1,13 @@
-/*.tag{background-color: #fffba0;}*/
-
-.logo{margin-left: 22rem;
-    width: max-content;
+.backgroundheader{
+    background-color: #6553ef; /* Header color */
+            width: 100%;
+            color: white;
+            height: 24rem;
+            
 }
-
-
-.logotwo
-    {
-         margin-left: 20rem;
-        }
-
 /*Update the cardContentStyle to use flexbox and wrap if needed*/
 .cardContent{
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,15 +19,17 @@
 
 /*Update titleStyle for the card title */
 .title{
+   
     font-size: 24px; /*Adjust font size as needed*/
     font-weight: bold; /*Optional: if you want the title to be bold */
     margin: 20px 0 10px 0; /*Adjust margin as needed */
-    flex-basis: 100%; /*Ensures the title takes full width of the container*/
+    flex-basis: 95%; /*Ensures the title takes full width of the container*/
     text-align: left;/*Aligns text to the left */
-    color: #000; /*Text color*/
+    color: white; /*Text color*/
 }
 
 .cardContainer{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,18 +41,21 @@
 
 .card{
    
-    margin-left: 32rem;
-    background-color : #5aff00;
+    margin-left: 35rem;
+    background-color : #32cd32;
     border-radius: 8px;
+    border: 1px solid black;
     padding: 2px;
+    padding-left: 1rem;
     position: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 75%;
+    width: 68%;
 }
 
 
 
 .contentContainer{
+    margin-top: 2rem;
     width: 100%; /* Take the full width to align with the header and footer*/
     display: flex;
     flex-direction: column;
@@ -68,38 +69,43 @@
 .textContainer{
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /*Aligns text to the left*/
-    width: calc(100% - 250px);/*Takes full width minus image and margin*/
-    padding-right: 7px; /*Adds some padding between text and image */
+    align-items: flex; /*Aligns text to the left*/
+    width: calc(100% - 230px);/*Takes full width minus image and margin*/
+    padding-right: 1px; /*Adds some padding between text and image */
+    
 }
 
 .image{
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     background-color: #cccccc;/*Placeholder color */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
+   
 }
 
 .textStyle{
     color: #000;
-    margin-bottom: 10px;
+    margin-top: -0.03rem;
     font-size: 18px; /*Adjust the font size as needed */
+    margin-left: 0.5rem;
+  
 }
 
-.textarea{
-    margin-top: 10px;
-    width: 100%; /*Makes the textarea full width of its parent */
-    height: 100px; /*Adjust height as needed */
+.textarea {
+    
+    width: 95%;
+    /*Makes the textarea full width of its parent */
+    height: 85px;
+    /*Adjust height as needed */
 }
-
 
 /*Add a style for the GPS button*/
 .gpsButton{
-    background-color: #a500ff;
+    background-color: #6553ef;
     color: white;
     border: none;
     border-radius: 5px;
@@ -107,7 +113,7 @@
     font-size: 16px;
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+   
     cursor: pointer;
 }
 
@@ -117,49 +123,288 @@
     width: 100%; /*Take up full container width */
     margin: 1rem 0;/* Add some vertical space*/
 }
+.whoWeAre{
+  background-color: white;
+        margin-left:10 rem;
+        padding: 7rem 6rem 5rem 20rem;
+        display: flex;
+        align-items: left;/*Align children vertically center*/
+        justify-content: flex-start;/* Align children to the start of the container*/
+        max-width: 650px;
+        width: 85%;
+        align-self: center;
+        margin: 2rem 0;
+       
+}
+
+
+
+/*Style for the text container within the "Who We Are" section*/
+.whoWeAreTextContainer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items:left;      /*Align text to the left */
+ 
+    
+}
+.whoWeAreText1{
+    font-size:33px;
+    margin-top:-0.5rem;
+}
+.whoWeAreText2 {
+    font-size: 14px;
+    margin-top:-0.5rem;
+}
+
+/*Style for the image in the "Who We Are" section */
+.whoWeAreImage{
+    
+   
+    width: 325px; /*Adjust the width as necessary */
+    height: 325px;/*Adjust the height as necessary */
+}
+
+
+
+/*New style for the button in the "Who We Are" section*/
+.knowMoreButton{
+    background-color: #FFA500; /* Button color*/
+        color: white; /* Text color*/
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px 10px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 0.25rem;
+        cursor: pointer;
+        width:45%;
+}
+
 
 
 
 @media screen and (max-width: 1100px) {
     .card {
         
-    margin-left: 10rem;
-    width: 95%;  
+    margin-left: 13rem;
+    width: 70%;  
     }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
+ 
+  .backgroundheader { 
+    height: 24rem;
+  }
+    
     .textContainer {
-        padding-right: 0.1rem;
-        width:calc(100% - 2rem);
+        padding-left: 0.5rem;
+        width:calc(100% - 14rem);
     }
         .image {
-            width: 15rem;
-            height: 15rem;
-            margin-left:5rem;
+           
+            width: 12rem;
+            height: 12rem;
+            
         }
+           .whoWeAreImage {
+               
+               margin-top: 1rem;
+           }      
+                   
+           .whoWeAreTextContainer {
+            margin-left:0.1rem;
+            
+           }
+          .whoWeAre{
+            max-width:35rem;
+            padding-right:21rem;
+            padding-left:10rem;
+            padding-top:-2rem;
+          }
+                .cardContent {padding-top: 0.8rem;}
 }
 @media screen and (max-width: 780px) {
     .card {
-
         margin-left: 1rem;
-        width:90%
+        width:66%
     }
+        .image {
+            margin:auto;
+            width: 10rem;
+            height: 10rem;
+        
+        }
+        .backgroundheader {
+                     height: 25rem;
+                 }
+        
+        .title {
+            padding-left:0.5 rem;
+            font-size: 19px;
+        }
+       
+     .textStyle {
+        font-size: 18px;
+        line-height: 25px;
+        
+
+     }
+         .whoWeAreImage {
+            width: 225px;
+            height: 225px;
+         }
+     
+         .whoWeAreTextContainer {
+           
+            font-size: 15px;
+         }
+
+      .textarea {
+       
+        height: 65px;
+        width:23 rem;    
+      }
+          
+          .gpsButton {
+            font-size: 14px;
+            
+          }
+          .knowMoreButton{
+            font-size: 12px;
+            padding:0.5rem;
+          }
+                  .whoWeAre {
+                      width: 75rem;
+                      padding-right: 24rem;
+                      padding-left: 7rem;
+                      padding-top:4rem;
+                  }
+            .textContainer {
+                                     
+             width: calc(100% - 13rem);
+             }
+                         .whoWeAreText1 {
+                             font-size: 25px;
+                             margin-top: -0.5rem;
+                         }
+            
+                         .whoWeAreText2 {
+                             font-size: 11px;
+                             margin-top: -0.5rem;
+                         }
+
 }
-@media screen and (max-width: 420px) 
+@media screen and (max-width: 430px) 
 {  
+    .backgroundheader {
+            height: 24rem;
+            width:100%;
+            box-sizing: border-box;
+        }
     .image {
-            width: 12rem;
-            height: 12rem;
-            margin-left: 3rem;
+            width: 8rem;
+            height: 8rem;
+            
         }
     
-
         .card {
-            width:90%;
+            width:88%;
+            margin-right: 0.5rem;
+        }
+    
+    .whoWeAre{
+        width:80%;
+        padding-left:1rem ;
+        padding-right:1rem ;
+        padding-bottom:3 rem;
+    }            
+         .title {
+             font-size: 18px;
+    
+         }
+    
+         .textStyle {
+             font-size: 14px;
+             
+         }
+        .whoWeAreImage {
+            width: 190 px;
+            height: 220px;
+           
+        }
+         .whoWeAreTextContainer {
+             font-size: 14px;
+             
+         }
+                 .textarea {
+                     font-size: 10px;
+                    margin-right:.5rem;
+                    
+                 }
+        
+                 .gpsButton {
+                     font-size: 11px;
+                 }
+                .knowMoreButton {
+                    width: 75px;
+                    font-size: 11px;
+                    padding:0.2rem;
+                 }
+                                  .textContainer {
+                
+                                      width: calc(100% - 9rem);
+                                  }
+             .whoWeAreText1 {
+                font-size: 19px;
+             }
+             .whoWeAreText2 {
+              font-size: 11px;
+             }
+
+    }  
+       
+ @media screen and (max-width: 370px){
+    .card {
+            width: 86%;
+
         }
 
+    .image{margin-top:-0.5rem;
+        margin-left:4.5rem;
+    }
+        .backgroundheader {
+            height: 30.5rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+                .title {
+                    font-size: 16px;
+                }
+            .textStyle {
+            font-size: 12px;
+        }
+                 .whoWeAreText1 {
+                     font-size: 14px;
+                 }
+        
+                 .whoWeAreText2 {
+                     font-size: 9px;
+                 }
+                .whoWeAreImage {
+                 width: 120 px;
+                 height: 220px;
+                
+                 }
+                 .textContainer{
+                    margin-left:-0.75rem;
+                 }
+    }
+    html,
+          body {
+              height: 100%;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+          }
 
-    }       
